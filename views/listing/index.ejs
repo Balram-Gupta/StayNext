@@ -1,7 +1,9 @@
 <% layout('layouts/boilerplate') -%>  
 
+    
 <body>
-   
+   <div id="filters-wrapper">     
+
      <div id="filters">     
       <div class="filter">
          <div><i class="fa-solid fa-fire-flame-curved"></i></div>
@@ -9,7 +11,7 @@
       </div>
       <div class="filter">
          <div><i class="fa-solid fa-bed"></i></div>
-         <p>Rooms</p>
+         <p>Rooms</p>   
       </div>
       <div class="filter">
          <div><i class="fa-solid fa-mountain-city"></i></div>
@@ -44,15 +46,20 @@
          <div><i class="fa-solid fa-igloo"></i></div>
          <p>Domes</p>
       </div>
-  
+    <div class="filter">
+         <div><i class="fa-solid fa-ship"></i></div>
+         <p>Boats</p>
+      </div>
+      </div>
+
       <div class="toggle">
          <div class="form-check-reverse form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
             <label class="form-check-label" for="flexSwitchCheckDefault">Display total after Taxes </label>
           </div>
-          
       </div>
-     </div>
+   </div>
+
      <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
         <% for(let listing of allListing){ %>
 
